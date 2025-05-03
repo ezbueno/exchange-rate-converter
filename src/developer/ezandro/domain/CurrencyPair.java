@@ -1,4 +1,4 @@
 package developer.ezandro.domain;
 
-public record CurrencyPair() {
+public record CurrencyPair(CurrencyCode base, CurrencyCode target) {
 }
