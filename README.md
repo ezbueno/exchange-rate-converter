@@ -13,7 +13,7 @@ This is a **console-based currency converter** developed in **Java** as part of 
   - USD ⇄ COP (Colombian Peso)
 - ✅ Strong typing using `enum` (`CurrencyCode`) for supported currencies
 - ✅ Modular code with clear separation of concerns (API, service, UI, domain, utils)
-- ✅ Clean console interface with input validation
+- ✅ Clean console interface with input validation and graceful error handling
 - ✅ Secure use of API keys through environment variables
 
 ---
@@ -72,6 +72,18 @@ This is a **console-based currency converter** developed in **Java** as part of 
 - Run the `CurrencyConverter` class located in `developer.ezandro.main`
 - Use the interactive menu to select a conversion
 - Enter the amount to convert and receive the result in real-time
+
+---
+
+## 📶 Offline Handling
+
+If the application is unable to reach the Exchange Rate API due to a lack of internet connection or API failure, it will gracefully notify the user with a friendly message:
+
+```
+Unable to retrieve the conversion result. Please try again later.
+```
+
+This ensures a better user experience even in failure scenarios.
 
 ---
 
