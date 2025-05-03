@@ -13,6 +13,7 @@ public class Message {
     public static final String CONVERSION_RESULT_MESSAGE = "Amount %.2f [%s] corresponds to the final amount of => %.2f [%s]%n";
     public static final String API_QUERY_ERROR = "Error when querying the exchange rate API. Check the internet connection.";
     public static final String REQUEST_INTERRUPTED_ERROR = "The request execution was interrupted. The operation has been canceled.";
+    public static final String CONVERSION_FAILED = "Unable to retrieve the conversion result. Please try again later.";
 
     public static final String MENU_HEADER = """
             ***********************************************
