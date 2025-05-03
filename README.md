@@ -1,17 +1,22 @@
-# Currency Converter
+# 💱 Currency Converter
 
-This project is a console-based currency converter developed in Java as part of the **ONE | TECH FOUNDATION - Back-End Java Specialization** by Oracle Next Education and Alura. The application allows users to convert currencies using real-time exchange rates retrieved from the [Exchange Rate API](https://www.exchangerate-api.com/).
+This is a **console-based currency converter** developed in **Java** as part of the **ONE | TECH FOUNDATION - Back-End Java Specialization** by Oracle Next Education and Alura. The application converts currencies using **real-time exchange rates** retrieved from the **Exchange Rate API**, with a clean and modular architecture using object-oriented principles.
+
+---
 
 ## 💡 Features
 
-- Real-time exchange rates.
-- Conversion between the following currencies:
+- ✅ Real-time currency conversion using Exchange Rate API  
+- ✅ Bidirectional conversion between the following currencies:
   - USD ⇄ ARS (Argentine Peso)
   - USD ⇄ BRL (Brazilian Real)
   - USD ⇄ COP (Colombian Peso)
-- Interactive console menu with input validation.
-- Environment variable support for API key security.
-- Modular and maintainable code using Java OOP principles.
+- ✅ Strong typing using `enum` (`CurrencyCode`) for supported currencies
+- ✅ Modular code with clear separation of concerns (API, service, UI, domain, utils)
+- ✅ Clean console interface with input validation
+- ✅ Secure use of API keys through environment variables
+
+---
 
 ## 📋 Menu Options
 
@@ -29,41 +34,56 @@ This project is a console-based currency converter developed in Java as part of 
 ***********************************************
 ```
 
+---
+
 ## 🛠 Technologies Used
 
-- Java 24
-- [Exchange Rate API](https://www.exchangerate-api.com/)
-- [Gson 2.13.1](https://mvnrepository.com/artifact/com.google.code.gson/gson)
-- [Dotenv Java 3.2.0](https://mvnrepository.com/artifact/io.github.cdimascio/dotenv-java)
+- ☕ Java 24  
+- 🌍 Exchange Rate API  
+- 📦 Gson 2.13.1  
+- 🔐 Dotenv Java 3.2.0
+
+---
 
 ## ⚙️ Setup
 
 ### Requirements
 
-- JDK 24 installed.
-- IntelliJ IDEA (recommended) or another Java IDE.
+- JDK 24 installed  
+- IntelliJ IDEA (recommended) or any Java-compatible IDE  
 
 ### Project Setup
 
-1. Clone the repository.
-2. Place the required JARs (`gson-2.13.1.jar`, `dotenv-java-3.2.0.jar`) in your module dependencies:
-   - `File > Project Structure > Modules > Dependencies`
-3. Create a `.env` file in the root of the project and add your API key:
+1. **Clone the repository**  
+2. **Add dependencies manually** if not using Maven/Gradle:
+   - `gson-2.13.1.jar`
+   - `dotenv-java-3.2.0.jar`  
+   *(Project Structure > Modules > Dependencies)*
+3. **Create a `.env` file** in the root of the project with your API key:
 
-```
-EXCHANGE_API_KEY=your_api_key_here
-```
+   ```
+   EXCHANGE_API_KEY=your_api_key_here
+   ```
 
-### Running the Application
+---
 
-1. Run the `CurrencyConverter` class.
-2. Use the menu to select the desired currency conversion.
-3. Enter the amount and receive the converted result in real-time.
+## ▶️ Running the Application
+
+- Run the `CurrencyConverter` class located in `developer.ezandro.main`
+- Use the interactive menu to select a conversion
+- Enter the amount to convert and receive the result in real-time
+
+---
 
 ## 🔐 Security Note
 
-Your API key is stored securely in a `.env` file and accessed using the Dotenv library. Do **not** commit your `.env` file to source control.
+Your API key is stored securely using a `.env` file, accessed via the Dotenv library.  
+**⚠️ Do not commit your `.env` file to version control.**
+
+---
 
 ## 👨‍💻 Author
 
-Developed by Ezandro as part of the **ONE | TECH FOUNDATION - Back-End Java Specialization** by Oracle Next Education and Alura.
+Developed by **Ezandro** as part of the  
+**ONE | TECH FOUNDATION - Back-End Java Specialization**  
+by **Oracle Next Education and Alura**
