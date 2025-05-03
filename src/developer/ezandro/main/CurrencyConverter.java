@@ -33,12 +33,17 @@ public class CurrencyConverter {
                             pair.target().name(),
                             amount
                     );
-                    ConversionResult.printConversionResult(
-                            amount,
-                            pair.base().name(),
-                            result.conversion_result(),
-                            pair.target().name()
-                    );
+
+                    if (result.conversion_result() == 0 && amount != 0) {
+                        System.out.println(Message.CONVERSION_FAILED);
+                    } else {
+                        ConversionResult.printConversionResult(
+                                amount,
+                                pair.base().name(),
+                                result.conversion_result(),
+                                pair.target().name()
+                        );
+                    }
                 } else {
                     System.out.println(Message.INVALID_OPTION_SHORT);
                 }
